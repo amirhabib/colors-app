@@ -1,0 +1,5 @@
+<!-- Select Color Component -->
+<select (change)="changeColor($event.target.value)">
+  <option value="0">Select Color</option>
+  <option *ngFor="let color of colors" >{{ color }}</option>
+</select>
